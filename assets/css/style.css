@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom:2px solid navy;
+    width:80%;
+    margin:0 auto;
+    margin-top:20px;
+}
+.logo{
+    margin-top:1%;
+    margin-bottom: 1%;
+}
+.heading{
+    margin-top:0;
+    margin-bottom:5px;
+    font-size:1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color:navy;
+    border-bottom:1px solid navy;
+}
+.subheading{
+    margin-top:0;
+    margin-bottom:5px;
+    font-family: 'Courier New', Courier, monospace;
+    color:navy;
+    font-size:1em;
+}
+.page-heading{
+    margin:20px;
+    text-align:center;
+    font-size:1.5em;
+    color:navy;
+    font-family: 'Courier New', Courier, monospace;
+}
+.login-wrapper{
+    display:flex;
+    width:70%;
+    margin:auto;
+    justify-content: space-between;
+}
+#login-form-wrapper{
+    margin:5%;
+    color:navy;
+    font-family: Courier, monospace;
+    font-size:1.2em;
+}
+#userID{
+    color:navy;
+    font-size:1em;
+    line-height: 2em;
+}
+.btn-login{
+    background:navy;
+    color:white;
+}
+.note-wrapper{
+    width:50%;
+    padding:30px;
+    font-family: 'Courier New', Courier, monospace;
+    color:navy;
+}
+#remember{
+    margin-left:10%;
+}
+.note-item{
+    margin:5%;
+}
+footer{
+    text-align:center;
+    border-top:2px solid navy;
+    width:80%;
+    margin:auto;
+    margin-top:2%;
+    padding-top:1%;
+    font-family: 'Courier New', Courier, monospace;
+    color:navy;
+}
+@media all and (max-width:1000px){
+    .login-wrapper{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #remember{
+        width:80%;
+    }
+    .login-form-wrapper{
+        flex:1 1 minmax(0,300px);
+    }
+    .note-wrapper{
+        width:100%;
+    }
+}
