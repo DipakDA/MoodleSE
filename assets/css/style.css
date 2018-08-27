@@ -6,24 +6,23 @@ header{
     border-bottom:2px solid navy;
     width:80%;
     margin:0 auto;
-    margin-top:20px;
 }
 .logo{
-    margin-top:1%;
-    margin-bottom: 1%;
+    margin:1% auto;
+    margin-top:40px;
 }
 .heading{
     margin-top:0;
     margin-bottom:5px;
     font-size:1.3em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
     color:navy;
     border-bottom:1px solid navy;
 }
 .subheading{
     margin-top:0;
     margin-bottom:5px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
     color:navy;
     font-size:1em;
 }
@@ -32,16 +31,16 @@ header{
     text-align:center;
     font-size:1.5em;
     color:navy;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
 }
 .login-wrapper{
     display:flex;
-    width:70%;
+    width:90%;
     margin:auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #login-form-wrapper{
-    margin:5%;
+    margin:5% 0;
     color:navy;
     font-family: Courier, monospace;
     font-size:1.2em;
@@ -54,11 +53,16 @@ header{
 .btn-login{
     background:navy;
     color:white;
+    border:1px solid navy;
+}
+.btn-login:hover{
+    background:transparent;
+    color:navy;
 }
 .note-wrapper{
+    margin:5% 0;
     width:50%;
-    padding:30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Courier, monospace;
     color:navy;
 }
 #remember{
@@ -66,6 +70,12 @@ header{
 }
 .note-item{
     margin:5%;
+}
+.forgot-link{
+    margin-top:15px;
+    display:block;
+    font-size:1em;
+    color:navy;
 }
 footer{
     text-align:center;
@@ -85,9 +95,6 @@ footer{
     }
     #remember{
         width:80%;
-    }
-    .login-form-wrapper{
-        flex:1 1 minmax(0,300px);
     }
     .note-wrapper{
         width:100%;
