@@ -1,0 +1,14 @@
+#topImage img{
+  width: 15%;
+  height: auto;
+  margin-left: 20%;
+}
+
+#topImage{
+  margin-top:25px;
+  width: 100%;
+  padding-left: 35%;
+  padding-right: 10%;
+  color: rgb(72, 133, 237);
+  margin-bottom: 30px;
+}
