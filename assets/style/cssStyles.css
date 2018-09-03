@@ -12,3 +12,9 @@
   color: rgb(72, 133, 237);
   margin-bottom: 30px;
 }
+
+.container{
+  width: 800px;
+  margin-top: 40px;
+  margin-left: 20px;
+}

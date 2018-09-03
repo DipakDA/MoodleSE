@@ -6,4 +6,5 @@ class user{
     this.name = name;
     this.type = type;
   }
+  
 }
