@@ -19,3 +19,8 @@ connection.connect((err) => {
     console.log("Connection to database established");
   }
 });
+
+/*export connection from this file to act as a database connection module in the index.js*/
+module.exports = connection;
+
+/*this file acts as a require for index.js*/

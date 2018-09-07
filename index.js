@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
+
+/*Set the view engine to EJS for rendering*/
+/*app.set('view engine', 'ejs');
+*/
+
 /*convert bootstrap from static to dynamic*/
 app.use('/CSS', express.static('node_modules/bootstrap/dist/css'));
 //convert images to dynamic
@@ -37,12 +42,19 @@ function createSrvr(req, res){
   });
 };
 
-
+/*the login page which is a POST method*/
 app.post('/login', loginProtocol);
 function loginProtocol(req, res){
   res.write(req.body.username);
   res.end();
 }
 
+/*Get data from Database can be used later on
+database.query('SELECT * FROM courses', (err, rows) => {
+  if(err) throw err;
+  console.log("Select query successful");
+  console.log(rows);
+});
+*/
 //Port command
 app.listen(8000);
