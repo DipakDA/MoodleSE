@@ -6,6 +6,7 @@ let app = express();
 let fs = require("fs");
 let path = require("path");
 let bodyParser = require("body-parser");
+let database = require('./Database/courseConnectionToDatabase.js')
 
 console.log("Server Started");
 //console.log(__dirname);
