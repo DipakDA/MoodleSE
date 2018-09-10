@@ -1,20 +1,35 @@
 #topImage img{
-  width: 15%;
+  width: 10%;
   height: auto;
-  margin-left: 20%;
+  left: 30px;
+
 }
 
 #topImage{
-  margin-top:25px;
   width: 100%;
-  padding-left: 35%;
-  padding-right: 10%;
   color: rgb(72, 133, 237);
-  margin-bottom: 30px;
 }
 
 .container{
-  width: 800px;
-  margin-top: 40px;
-  margin-left: 20px;
+  width: 100%;
+}
+
+#footerSelf{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+
+.blue{
+  background-color: #0099FF;
+}
+
+#LMSUp{
+  width: 70%;
+  text-align: center;
+  margin-left: 120px;
+  display: inline-block;
+  position: relative;
+  top: 35px;
 }
