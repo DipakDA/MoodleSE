@@ -3,12 +3,14 @@
 let http = require("http");
 let express = require("express");
 let app = express();
+let routes = require('./routes/index.js');
 let fs = require("fs");
 let path = require("path");
 let bodyParser = require("body-parser");
 let database = require('./Database/courseConnectionToDatabase.js')
+let port = process.env.PORT || 3000;
 
-console.log("Server Started");
+//console.log("Server Started");
 //console.log(__dirname);
 
 //convert the POST data to json file for parsing to page
@@ -19,8 +21,8 @@ app.use(bodyParser.json());
 
 
 /*Set the view engine to EJS for rendering*/
-/*app.set('view engine', 'ejs');
-*/
+app.set('view engine', 'ejs');
+
 
 /*convert bootstrap from static to dynamic*/
 app.use('/CSS', express.static('node_modules/bootstrap/dist/css'));
@@ -33,28 +35,9 @@ app.use('/STYLE', express.static('assets/style'));
 req = request
 res = response
 */
-app.get('/', createSrvr);
-function createSrvr(req, res){
-  fs.readFile(__dirname + '/login/loginpage.html', function(err, data){
-    res.writeHead(200, "Login Page");
-    res.write(data);
-    res.end();
-  });
-};
 
-/*the login page which is a POST method*/
-app.post('/login', loginProtocol);
-function loginProtocol(req, res){
-  res.write(req.body.username);
-  res.end();
-}
+routes(app);
 
-/*Get data from Database can be used later on
-database.query('SELECT * FROM courses', (err, rows) => {
-  if(err) throw err;
-  console.log("Select query successful");
-  console.log(rows);
+app.listen(port, function() {
+  console.log("Server listening on port" + port + "...");
 });
-*/
-//Port command
-app.listen(8000);
