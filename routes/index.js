@@ -8,7 +8,7 @@ module.exports = function(app) {
     };
 
   /*the login page which is a POST method*/
-  app.post('/login', loginProtocol);
+  app.post('/my', loginProtocol);
   function loginProtocol(req, res){
     res.render('pages/my');
   }
